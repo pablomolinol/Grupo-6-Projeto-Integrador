@@ -40,7 +40,7 @@ public class Projeto
             case 4: System.out.println("Saindo...");System.exit(0);
         
             default:
-                System.out.println("Opção Inválida");
+                System.out.println("Opção Inválida\n");
                 
                 menu();
                 
@@ -143,9 +143,7 @@ public class Projeto
        } 
         public static void main (String[] args){
         menu();
-        
-        
-        
+        // comentando 
   }
   
 }
