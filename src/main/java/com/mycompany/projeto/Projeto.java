@@ -61,22 +61,26 @@ public class Projeto
     System.out.println("Então meus servos, lhe dou duas escolhas lutar para uma vida melhor ao lado do seu rei, ou aceitar a vida medíocre que vocês tem.\n");
    
     System.out.println("Faça sua escolha sabiamente! Escolha >1< para invadir outros reinos com matança e extermínio de outras pessoas, ou, escolha >2< para invadir com menos matança e mais diálogo, para tentar conquistar os outros reinos\n");
-    int opcao;
-    opcao=jogador.nextInt();
+    int opcao; 
   
-    switch (opcao)
-    {
-      case 1: 
-        System.out.println("Você conquistou todas as terras ao seu redor, mas ficou um pouco mal visto, pois perdeu vários soldados, mas aumentou imensamente seu império começando seu caminho de glória para você e seu povo.\n");
-        break;
-        
-      case 2:
-        System.out.println("Você tentou conquistar seu império com mais paz, mas afinal de contas na guerra, paz nunca é uma opção, você perde ainda mais soldados, pois não estavam tão preparados para guerra, quantos seus oponentes, mas isso não importa afinal de contas, pois seus soldados era muito mais fortes que os do oponente, conseguindo conquistar seu império para o seu caminho de glória!\n");
-        break;
-        
-      default:
-          System.out.println("Opção inválida \n");
-    }
+    do{
+    
+        opcao = jogador.nextInt();
+        switch (opcao) {
+            case 1: 
+              System.out.println("Você conquistou todas as terras ao seu redor, mas ficou um pouco mal visto, pois perdeu vários soldados, mas aumentou imensamente seu império começando seu caminho de glória para você e seu povo.\n");
+              break;
+
+            case 2:
+              System.out.println("Você tentou conquistar seu império com mais paz, mas afinal de contas na guerra, paz nunca é uma opção, você perde ainda mais soldados, pois não estavam tão preparados para guerra, quantos seus oponentes, mas isso não importa afinal de contas, pois seus soldados era muito mais fortes que os do oponente, conseguindo conquistar seu império para o seu caminho de glória!\n");
+              break;
+
+            default:
+              System.out.println("Opção inválida, tente novamente \n");
+              break;
+        }
+    } while (opcao != 1 && opcao!=2);
+    
         
         
         System.out.println("Depois dessa 'Grande Conquista' como ficou conhecido esse acontecimento, Ironberg e Carianus III prosperaram, uma vida quase perfeita, se não fosse por um detalhe, Carianus e sua esposa, a rainha Roberta não conseguiam conceber um herdeiro para o trono, mesmo depois de uma vida inteira de conquistas e riqueza, o rei nunca conseguiu o que mais desejou, um filho. \n");
@@ -89,32 +93,32 @@ public class Projeto
         
         
         
-        int escolher;
-        escolher= jogador.nextInt();
         
-        switch (escolher)
-   {
-      case 1: 
-        System.out.println("Entra uma mulher que aparenta ter a idade de Roberta e um jovem aparentando ter 25 anos, forte, robusto e com um olhar familiar \n" );
-        break;
+    do{
+        opcao = jogador.nextInt();
+        switch (opcao) {
+                 case 1: 
+                     System.out.println("Entra uma mulher que aparenta ter a idade de Roberta e um jovem aparentando ter 25 anos, forte, robusto e com um olhar familiar \n" );
+                  break;
+
+                  case 2:
+                     System.out.println("Você manda reforçar a guarda, mas inútil, derrubando a porta a força entra um jovem aparentando ter 25 anos, forte, robusto e com um olhar familiar e uma mulher que parece ter a idade de Roberta \n");
+                      break;
+
+                  default:
+                     System.out.println("Opção inválida ");
+                     break;
+       
+       }
+    } while (opcao != 1 && opcao!=2);
         
-      case 2:
-        System.out.println("Você manda reforçar a guarda, mas inútil, derrubando a porta a força entra um jovem aparentando ter 25 anos, forte, robusto e com um olhar familiar e uma mulher que parece ter a idade de Roberta \n");
-        break;
-        
-      default:
-        System.out.println("Opção inválida /n");
-        
-        
-    }
-        
-          System.out.println(" O que está acontecendo? Quem são vocês que ousam invadir meu castelo em pleno leito de morte do meu marido?\n");
+               
+        System.out.println(" O que está acontecendo? Quem são vocês que ousam invadir meu castelo em pleno leito de morte do meu marido?\n");
           
-            System.out.println("");
-  
+        System.out.println("");
+            
+        System.exit(0);
   }
-  
-  
   
   public static void instruções(){
   
