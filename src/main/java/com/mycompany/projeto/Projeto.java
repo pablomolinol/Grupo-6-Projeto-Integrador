@@ -42,7 +42,7 @@ public class Projeto
             default:
                 System.out.println("Opção Inválida\n");
                 
-                menu();
+                menu(); // retorna pro Menu
                 
                   
         
@@ -117,7 +117,7 @@ public class Projeto
           
         System.out.println("");
             
-        System.exit(0);
+        System.exit(0); // Finaliza o código
   }
   
   public static void instruções(){
@@ -141,13 +141,13 @@ public class Projeto
         System.out.println("Roteiristas:\n João Macieski\n Thiago Perrud\n Pablo Molina\n ");
         System.out.println("Dirigido e editado por:\n João Macieski\n Thiago Perrud\n Pablo Molina\n");
         System.out.println("Produção:\n João Macieski\n Thiago Perrud\n Pablo Molina\n");
-        System.out.println("Agradecimento especial a Thiago Toguro");
+        System.out.println("Agradecimento especial a Tiago Toguro");
         
         menu();
        } 
         public static void main (String[] args){
         menu();
-        // comentando 
+        // volta pro Menu
   }
   
 }
