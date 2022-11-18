@@ -154,17 +154,18 @@ public class Projeto
         System.out.println("Roteiristas:\n João Macieski\n Thiago Perrud\n Pablo Molina\n ");
         System.out.println("Dirigido e editado por:\n João Macieski\n Thiago Perrud\n Pablo Molina\n");
         System.out.println("Produção:\n João Macieski\n Thiago Perrud\n Pablo Molina\n");
-<<<<<<< HEAD
+
         System.out.println("Agradecimento especial a Tiago Toguro");
-=======
+
         System.out.println("Agradecimento especial a Tiago Toguro, da mansão maromba!");
->>>>>>> 5892f915c3bfb725252676a5dbd538939116c138
+
         
         menu();
        } 
         public static void main (String[] args){
         menu();
         // volta pro Menu
+        // jogo
   }
   
 }
