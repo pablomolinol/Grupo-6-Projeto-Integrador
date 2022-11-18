@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Random;
 
 
 public class Projeto
@@ -119,18 +120,67 @@ public class Projeto
           System.out.println("Espantanda ao ver o filho de Julis, roberta pergunta o nome do menino e ele responde... me chamo Tiago Toguro, de onde eu venho sou conhecido como TOGS|Roberta estava muito espantandada com o que havia visto, pois não tinha como negar o que ela estava vendo.\n");
       System.out.println("Thiago Toguro, vulgo TOGS era idêntico ao seu marido, certamente era filho dele, então a rainha Roberta pede conselho a corte do rei, que diz que tem que tem que entregar o trono, para TOGS.\n");
       System.out.println("Pois de acordo com as leis do trono, caso ela não passe o trono ela será tirada a força pois, o trono é de TOGS, por direito\n");
-      System.out.println("Começando assim a dinastia do Tiago Toguro vulgo TOGS I");
+      System.out.println("Começando assim a dinastia do Tiago Toguro vulgo TOGS I\n");
+      
+      System.out.println("Bem, TOGS é jovem e inexperiente, não sabe como regir um império, ainda mais do Tamanho de Ironberg, então escolheu dois conselheiros, Fredericks e Henry\n");
+      System.out.println("Ensinando respectivamente administração ciêntifica e o outro a clássica\n ");
+      
+      System.out.println("Primeirmente os conselheiros do rei deram as opções para ele: escolher qual tipo de rei ele seria <escolha qual tipo de rei você quer ser\n ");
+      System.out.println("Escolha <1> para autoritário Escolha <2> para democrata\n");
+      int opcao1;
+      do{
+        opcao1 = jogador.nextInt();
+        switch (opcao) {
+                 case 1: 
+                     System.out.println("Na escolha do rei autoritário, aonde as pessoas do seu reino não terão liberdade, se assemelhando com a ADM clássica\n" );
+                  break;
+
+                  case 2:
+                     System.out.println(" Na escolha do rei democrata, as pessoas seram dividas por tarefas e serão ouvidas\n");
+                      break;
+
+                  default:
+                     System.out.println("Opção inválida ");
+                     break;
+       
+       }
+    } while (opcao1 != 1 && opcao1!=2  );
+      
+      Random aleatorio = new Random ();
+      
+      int num,a,t=0;
+      System.out.println("No primeiro dia de governo, chega um bobo da corte e sugere uma brincadeira com orei se ele acertar quantas cartas de 0 a 52 eu tenho em minhas mãos\n Você em 5 chances, o próprio nunca mais o perturbaria com suas brincadeiras, caso ele erre ele voltará a pertuba-lo com suas bricadeiras");
+      a=aleatorio.nextInt(52);
+      do {              
+            System.out.println(" escreva um numero de 0 a 52  "  );
+           num=jogador.nextInt();
+        if(num == a ){System.out.println("você ganhou o jogo! nunca mais o pertubarei ");}
+        if (num - a == 1 || num + 1 == a  ){System.out.println(" esta quente, tente mais  ");}
+        else if (num<a  ) {System.out.println(" o numero é maior  ");}
+        
+        else if (num>a  ) {System.out.println(" o numero é menor ");}
+        t++;
+            } while((t!=5) && ( num !=a ));
+      if (num !=a){System.out.println("game over, voltarei a pertubalo com minhas brincadeiras!");}
+        
+        System.out.println("O numero era exatamente " +  a );
+      
+      
+      
+      
+      
+     
 
       
         
         
             
-<<<<<<< HEAD
+
         System.exit(0); // Finaliza o código
-=======
-        System.exit(0);
+
         
->>>>>>> 5892f915c3bfb725252676a5dbd538939116c138
+        
+
   }
   
   public static void instruções(){
@@ -155,9 +205,7 @@ public class Projeto
         System.out.println("Dirigido e editado por:\n João Macieski\n Thiago Perrud\n Pablo Molina\n");
         System.out.println("Produção:\n João Macieski\n Thiago Perrud\n Pablo Molina\n");
 
-        System.out.println("Agradecimento especial a Tiago Toguro");
-
-        System.out.println("Agradecimento especial a Tiago Toguro, da mansão maromba!");
+        System.out.println("Agradecimento especial a Tiago Toguro da mansão maromba!");
 
         
         menu();
