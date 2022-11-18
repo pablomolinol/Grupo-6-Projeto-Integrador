@@ -115,9 +115,22 @@ public class Projeto
                
         System.out.println(" O que está acontecendo? Quem são vocês que ousam invadir meu castelo em pleno leito de morte do meu marido?\n");
           
-        System.out.println("");
+        System.out.println("Me chamo Julis, e eu tenho um filho com o seu marido, vulgo Carianus III, ele sempre falava pra mim que era muito frustado por não tem um filho com a vossa majestade e eu dei esse orgulho pra ele, e eu vim com meu filho reivindicar o que é dele por direito.\n");
+          System.out.println("Espantanda ao ver o filho de Julis, roberta pergunta o nome do menino e ele responde... me chamo Tiago Toguro, de onde eu venho sou conhecido como TOGS|Roberta estava muito espantandada com o que havia visto, pois não tinha como negar o que ela estava vendo.\n");
+      System.out.println("Thiago Toguro, vulgo TOGS era idêntico ao seu marido, certamente era filho dele, então a rainha Roberta pede conselho a corte do rei, que diz que tem que tem que entregar o trono, para TOGS.\n");
+      System.out.println("Pois de acordo com as leis do trono, caso ela não passe o trono ela será tirada a força pois, o trono é de TOGS, por direito\n");
+      System.out.println("Começando assim a dinastia do Tiago Toguro vulgo TOGS I");
+
+      
+        
+        
             
+<<<<<<< HEAD
         System.exit(0); // Finaliza o código
+=======
+        System.exit(0);
+        
+>>>>>>> 5892f915c3bfb725252676a5dbd538939116c138
   }
   
   public static void instruções(){
@@ -141,7 +154,11 @@ public class Projeto
         System.out.println("Roteiristas:\n João Macieski\n Thiago Perrud\n Pablo Molina\n ");
         System.out.println("Dirigido e editado por:\n João Macieski\n Thiago Perrud\n Pablo Molina\n");
         System.out.println("Produção:\n João Macieski\n Thiago Perrud\n Pablo Molina\n");
+<<<<<<< HEAD
         System.out.println("Agradecimento especial a Tiago Toguro");
+=======
+        System.out.println("Agradecimento especial a Tiago Toguro, da mansão maromba!");
+>>>>>>> 5892f915c3bfb725252676a5dbd538939116c138
         
         menu();
        } 
@@ -151,4 +168,3 @@ public class Projeto
   }
   
 }
-
