@@ -91,10 +91,7 @@ public class Projeto
         System.out.println("O momento que temia finalmente chega, Carianus morre. Mas algo estranho acontece, em seu leito de morte a rainha Roberta ouve uma confusão, como se alguém tentasse invadir o castelo a força, mesmo de luto e sofrendo ela ainda é rainha e deve ir ver o que se passa. /n ");
         
         System.out.println("Escolha >1< para deixar quem está tentando invadir entrar ou escolha >2< para reforçar a guarda para impedir? \n");
-        
-        
-        
-        
+          
     do{
         opcao = jogador.nextInt();
         switch (opcao) {
@@ -107,7 +104,7 @@ public class Projeto
                       break;
 
                   default:
-                     System.out.println("Opção inválida ");
+                     System.out.println("Opção inválida!");
                      break;
        
        }
@@ -122,6 +119,7 @@ public class Projeto
       System.out.println("Pois de acordo com as leis do trono, caso ela não passe o trono ela será tirada a força pois, o trono é de TOGS, por direito\n");
       System.out.println("Começando assim a dinastia do Tiago Toguro vulgo TOGS I\n");
       
+      //Qual tipo de rei você deseja ser para o seu império?
       System.out.println("Bem, TOGS é jovem e inexperiente, não sabe como regir um império, ainda mais do Tamanho de Ironberg, então escolheu dois conselheiros, Fredericks e Henry\n");
       System.out.println("Ensinando respectivamente administração ciêntifica e o outro a clássica\n ");
       
@@ -132,54 +130,63 @@ public class Projeto
         opcao1 = jogador.nextInt();
         switch (opcao) {
                  case 1: 
-                     System.out.println("Na escolha do rei autoritário, aonde as pessoas do seu reino não terão liberdade, se assemelhando com a ADM clássica\n" );
+                     System.out.println("Na escolha do rei autoritário, onde as pessoas do seu reino não terão liberdade, se assemelhando com a ADM clássica\n" );
                   break;
 
                   case 2:
-                     System.out.println(" Na escolha do rei democrata, as pessoas seram dividas por tarefas e serão ouvidas\n");
+                     System.out.println("Na escolha do rei democrata, as pessoas seram dividas por tarefas e serão ouvidas.\n");
                       break;
 
                   default:
-                     System.out.println("Opção inválida ");
+                     System.out.println("Opção inválida. ");
                      break;
        
        }
     } while (opcao1 != 1 && opcao1!=2  );
       
+      
+      //Brincadeira do bobo da côrte com Random e If.
       Random aleatorio = new Random ();
       
       int num,a,t=0;
-      System.out.println("No primeiro dia de governo, chega um bobo da corte e sugere uma brincadeira com orei se ele acertar quantas cartas de 0 a 52 eu tenho em minhas mãos\n Você em 5 chances, o próprio nunca mais o perturbaria com suas brincadeiras, caso ele erre ele voltará a pertuba-lo com suas bricadeiras");
-      a=aleatorio.nextInt(52);
+      System.out.println("No primeiro dia de governo, em um momento de descontração, o bobo da côrte sugere uma brincadeira para o Rei. Se ele conseguiria acertar quantas cartas entre 1 a 52 ele tinha em suas mãos...\n"); 
+      System.out.println("Você tem 5 chances, todavia, o próprio bobo nunca mais o perturbaria com suas brincadeiras... MAS, caso ele erre ele voltará a pertuba-lo novamente!\n");
+      a= aleatorio.nextInt(52) + 1;
       do {              
-            System.out.println(" escreva um numero de 0 a 52  "  );
+            System.out.println("Escreva um número entre 01 a 52 e tente sua sorte...");
            num=jogador.nextInt();
-        if(num == a ){System.out.println("você ganhou o jogo! nunca mais o pertubarei ");}
-        if (num - a == 1 || num + 1 == a  ){System.out.println(" esta quente, tente mais  ");}
-        else if (num<a  ) {System.out.println(" o numero é maior  ");}
+        if(num == a ){System.out.println("Droga! Você ganhou o jogo! Nunca mais lhe pertubarei ");}
+        if (num - a == 1 || num + 1 == a  ){System.out.println("Está próximo, tente mais...  ");}
+        else if (num<a) {System.out.println("O número é maior!");}
         
-        else if (num>a  ) {System.out.println(" o numero é menor ");}
+        else if (num>a) {System.out.println("O número é menor!");}
         t++;
             } while((t!=5) && ( num !=a ));
-      if (num !=a){System.out.println("game over, voltarei a pertubalo com minhas brincadeiras!");}
+      if (num !=a){System.out.println("Game over, voltarei a pertubá-lo com minhas brincadeiras!\n");}
         
-        System.out.println("O numero era exatamente " +  a );
-      
-      
-      
-      
-      
-     
-
-      
+        System.out.println("O número era exatamente " +  a + "\n");
         
+        //Situação do Moinho
+        System.out.println("Depois da brincadeira com o rei, assuntos sérios precisavam ser tratados. Os agricultores do reino haviam chegado ao castelo e exclamado ao rei: o moinho quebrou!\n");
+        System.out.println("Com o moinho quebrado, as plantações foram prejudicadas e havia uma grande possibilidade de faltar alimentos para o império em poucas semanas.\n");
+        System.out.println("Diante desse cenário, o jovem rei tem a possibilidade de tomar uma das 3 decisões abaixo. Escolha entre 1 e 3 para responder.\n");
+        System.out.println(">1< Ignorar o pedido dos agricultores, expulsá-los do castelo e caçoar da possibilidade da fome atingir o império.\n");
+        System.out.println(">2< Ordenar que o máximo de pessoas aleatórias possíveis ajudem no problema com o moinho, ganhando o reconhecimento do povo pela agilidade.\n");
+        System.out.println(">3< Demorar um pouco mais para sanar o problema, mas selecionar calmamente as pessoas aptas e indicadas para resolver o problema existente no moinho, evitando um desastre maior no futuro.\n");
         
+        int moinho = jogador.nextInt();
+        if (moinho == 3){
+            System.out.println("Graças a solução bem pensada do rei, o moinho foi restaurado com sucesso, garantindo a comida na mesa de seus súditos!\n");  
+        }else 
+            System.out.println("Devido a tomada de decisão precipitada do rei, em pouco tempo o moinho se desestruturou e houve um terrível acidente na colheita. Esse acontecimento fez com que os súditos desconfiassem da habilidade de tomar decisões que o rei possuía.\n");
+ 
+        
+        System.out.println("Meses após o evento do moinho, o conselheiro Fredericks sugeriu ao rei que criasse e desenvolvesse uma estrutura de hierarquia para o funcionamento adequado do império.\n");
+        System.out.println("Com isso, dando oportunidade a plebe e causando também revoltas na burguesia com essa decisão...");
+        System.out.println("Com o poder de persuasão da burguesia, eles recrutaram as pessoas da plebe como soldados, tentando dar um verdadeiro golpe no trono de TOGS I.");
+        System.out.println("Com isso, o rei teve de ordenar o exército a parar a grande rebelião e impedir o golpe!");
             
-
-        System.exit(0); // Finaliza o código
-
-        
-        
+        System.exit(0);
 
   }
   
