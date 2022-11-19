@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Random;
 
-
 public class Projeto
 {
     
@@ -180,13 +179,23 @@ public class Projeto
         }else 
             System.out.println("Devido a tomada de decisão precipitada do rei, em pouco tempo o moinho se desestruturou e houve um terrível acidente na colheita. Esse acontecimento fez com que os súditos desconfiassem da habilidade de tomar decisões que o rei possuía.\n");
  
-        
+        //Desafio da revolta da burguesa
         System.out.println("Meses após o evento do moinho, o conselheiro Fredericks sugeriu ao rei que criasse e desenvolvesse uma estrutura de hierarquia para o funcionamento adequado do império.\n");
         System.out.println("Com isso, dando oportunidade a plebe e causando também revoltas na burguesia com essa decisão...");
         System.out.println("Com o poder de persuasão da burguesia, eles recrutaram as pessoas da plebe como soldados, tentando dar um verdadeiro golpe no trono de TOGS I.");
-        System.out.println("Com isso, o rei teve de ordenar o exército a parar a grande rebelião e impedir o golpe!");
-            
-        System.exit(0);
+        System.out.println("Com isso, o rei teve de ordenar o exército a parar a grande rebelião e impedir o golpe, ordenando os seus soldados para irem a luta!");
+        
+        int soldado = aleatorio.nextInt(1000) + 1 ;
+        System.out.println("O numero de soldados perdidos foi " +  soldado);
+    
+    if (soldado < 300) System.out.println(" Grande vitória, sofreu poucas perdas, tendo assim o reino uma grande perspectiva de recuperação"); 
+    else if (soldado > 300 && soldado < 600)
+        System.out.println(" Perca mediana de soldados, tendo que visualizar o futuro de uma forma mais delicada, porem não tão preucupante");
+    
+    else System.out.println(" Perda significativa de soldados, a burguesia quase deu o golpe no trono, causando uma grande instabilidade no império, e perdendo muitos aliados.");
+        
+    
+    System.exit(0);
 
   }
   
