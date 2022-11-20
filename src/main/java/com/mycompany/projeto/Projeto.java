@@ -1,9 +1,8 @@
-
 package com.mycompany.projeto;
 
 /**
  *
- * autores João Pedro Macieski, Pablo Molina, Thiago Perrud
+ * @author phmol
  */
 
 import java.util.ArrayList;
