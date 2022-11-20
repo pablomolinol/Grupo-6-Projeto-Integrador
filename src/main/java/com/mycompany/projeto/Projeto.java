@@ -3,7 +3,7 @@ package com.mycompany.projeto;
 
 /**
  *
- * @author phmol
+ * autores João Pedro Macieski, Pablo Molina, Thiago Perrud
  */
 
 import java.util.ArrayList;
