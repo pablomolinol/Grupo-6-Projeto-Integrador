@@ -117,13 +117,13 @@ public class Projeto
                       break;
 
                   default:
-                     System.out.println("Opção inválida ");
+                     System.out.println("Opção inválida. ");
                      break;
        
        }
     } while (opcao != 1 && opcao!=2);
         
-               
+    //Qual tipo de rei você deseja ser ao governar o império? (1)           
         System.out.println(" O que está acontecendo? Quem são vocês que ousam invadir meu castelo em pleno leito de morte do meu marido?\n");
           
       
@@ -165,6 +165,7 @@ public class Projeto
        }
     } while (opcao1 != 1 && opcao1!=2  );
       
+      //Desafio do bobo da corte (2)
       Random aleatorio = new Random ();
       
      
@@ -197,7 +198,8 @@ public class Projeto
         
         
       System.out.println("O numero era exatamente " +  a );
-        //Situação do Moinho
+      
+        //Situação do Moinho (3)
         
         System.out.println("Depois da brincadeira com o rei, assuntos sérios precisavam ser tratados. Os agricultores do reino haviam chegado ao castelo e exclamado ao rei: o moinho quebrou!\n");
         
@@ -217,7 +219,8 @@ public class Projeto
         }else 
             System.out.println("Devido a tomada de decisão precipitada do rei, em pouco tempo o moinho se desestruturou e houve um terrível acidente na colheita. Esse acontecimento fez com que os súditos desconfiassem da habilidade de tomar decisões que o rei possuía.\n");
  
-        //Desafio da revolta da burguesa
+        
+        //Desafio da revolta da burguesia (4)
         System.out.println("\nMeses após o evento do moinho, o conselheiro Fredericks sugeriu ao rei que criasse e desenvolvesse uma estrutura de hierarquia para o funcionamento adequado do império.\n");
         
         System.out.println("\nCom isso, dando oportunidade a plebe e causando também revoltas na burguesia com essa decisão...");
@@ -240,7 +243,7 @@ public class Projeto
         
         
     
-        // decisão após revolta  
+        // Decisão após revolta (5) 
           
           
         System.out.println("\nQuerendo ou não após grandes guerras, ou grandes rebeliões, o reino fica abalado, fazendo com que TOGS tome grande decisões");
@@ -282,7 +285,7 @@ public class Projeto
         }
     } while (golpe_estado != 1 && golpe_estado !=2);
     
-    // questão coleta de minérios
+    // questão coleta de minérios (6)
     
     System.out.println("O reinado se mantem de forma autosuficiente, sendo assim a busca por minérios é exigida pelo rei constantemente");
     System.out.println("Os minérios são uma importnate fonte de renda ao reinado, sendo um suporte econõmico e financeiro para o mesmo");
@@ -337,24 +340,129 @@ public class Projeto
               break;
 
             default:
-              System.out.println("Opção inválida, tente novamente \n");
+              System.out.println("Opção inválida, tente novamente.\n");
               break;
         }
     } while (golpe_estado != 1 && golpe_estado !=2);
     
     int perdas = aleatorio.nextInt(1000);
-        System.out.println("\nO numero de soldados perdidos foi " +  perdas);
+        System.out.println("\nO número de soldados perdidos foram de " +  perdas);
         
         if (perdas <= 300)
             System.out.println("\nGrande vitória, sofreu poucas perdas, e capturou muitos soldados, fazendo assim o seu exercito um dos maiores de mundo");
         
         
         else if (perdas > 300 && perdas < 600)
-            System.out.println("\nPerca mediana de soldados, mas como você capturou soldados adversarios, você aumentou o número de soldados.");
+            System.out.println("\n1Perca mediana de soldados, mas como você capturou soldados adversarios, você aumentou o número de soldados.\n");
         
-        else System.out.println("\nPerda significativa de soldados, porém voce dominou soldados de outros terras sendo assim manteve um número parecido de soldados.");
+        else System.out.println("\nPerda significativa de soldados, porém voce dominou soldados de outros terras sendo assim manteve um número parecido de soldados.\n");
     
+    //Questão da muralha com ArrayList (7)
+        boolean acertou = false;
+        
+        List alternativas = new ArrayList<>();
+        alternativas.add(" Escolher um número pequeno de trabalhadores e forçá-los ao extremo para executar a construção da muralha de um jeito rápido.");
+        alternativas.add(" Preparar equipes de pessoas selecionadas que irão realizar tarefas específicas para a construção da muralha, diminuindo o cansaço que pode ser exaustivo."); //Resposta correta
+        alternativas.add(" Escolher somente homens jovens para trabalhar arduamente na construção da muralha, poupando as mulheres e os idosos.");
+        alternativas.add(" Cancelar a construção da muralha porque terá um gasto excessivo e arriscar na vulnerabilidade futura do reino.");
+        
+        do{
+            Collections.shuffle (alternativas);
+            System.out.println("Continuando o desenvolvimento da história... Os trabalhos para a manutenção diária do império exigem esforços de muitos homens e mulheres.\n");
+            System.out.println("A estrutura hierárquica ordena as funções de todas as pessoas, sendo assim, existe um modo adequado para realizar tais ações.\n");
+            System.out.println("Escolha uma alternativa condizente para a grande construção da muralha que protege o império de invasores inimigos.");           
+            System.out.println("Você tem algumas opções: \n");
+            System.out.println("A) " + alternativas.get(0));
+            System.out.println("B) " + alternativas.get(1));
+            System.out.println("C) " + alternativas.get(2));
+            System.out.println("D) " + alternativas.get(3));
+            String alternativa = jogador.next();
+            
+            
+            switch (alternativa) {
+                case "a":
+                case "A":
+                    if (alternativas.get(0).equals(" Preparar equipes de pessoas selecionadas que irão realizar tarefas específicas para a construção da muralha, diminuindo o cansaço que pode ser exaustivo.")) {
+                        System.out.println("Correto! A única maneira de realizar a construção da muralha é através da divisão de equipes selecionadas e capacitadas, evitando a fadiga exaustiva e trazendo eficiência para o projeto.!\n");
+                        acertou = true;
+                    } else {
+                        System.out.println("Errado... Não foi uma decisão sábia. Escolhas erradas diminuem sua reputação com o seu povo e os territórios vizinhos.\n");
+                    }
+                    break;
+                    
+                    case "b":
+                    case "B":
+                    if (alternativas.get(1).equals(" Preparar equipes de pessoas selecionadas que irão realizar tarefas específicas para a construção da muralha, diminuindo o cansaço que pode ser exaustivo.")) {
+                        System.out.println("Correto! A única maneira de realizar a construção da muralha é através da divisão de equipes selecionadas e capacitadas, evitando a fadiga exaustiva e trazendo eficiência para o projeto.!\n");
+                        acertou = true;
+                    } else {
+                        System.out.println("Errado... Não foi uma decisão sábia. Escolhas erradas diminuem sua reputação com o seu povo e os territórios vizinhos.\n");
+                    }
+                    break;
+                           
+                    case "c":
+                    case "C":
+                    if (alternativas.get(2).equals(" Preparar equipes de pessoas selecionadas que irão realizar tarefas específicas para a construção da muralha, diminuindo o cansaço que pode ser exaustivo.")) {
+                        System.out.println("Correto! A única maneira de realizar a construção da muralha é através da divisão de equipes selecionadas e capacitadas, evitando a fadiga exaustiva e trazendo eficiência para o projeto.!\n");
+                        acertou = true;
+                    } else {
+                        System.out.println("Errado... Não foi uma decisão sábia. Escolhas erradas diminuem sua reputação com o seu povo e os territórios vizinhos.\n");
+                    }
+                    break;
+                    
+                    case "d":
+                    case "D":
+                    if (alternativas.get(3).equals(" Preparar equipes de pessoas selecionadas que irão realizar tarefas específicas para a construção da muralha, diminuindo o cansaço que pode ser exaustivo.")) {
+                        System.out.println("Correto! A única maneira de realizar a construção da muralha é através da divisão de equipes selecionadas e capacitadas, evitando a fadiga exaustiva e trazendo eficiência para o projeto.!\n");
+                        acertou = true;
+                    } else {
+                        System.out.println("Errado... Não foi uma decisão sábia. Escolhas erradas diminuem sua reputação com o seu povo e os territórios vizinhos.\n");
+                    }
+                    break;
+                  
+                    default:
+                    System.out.print("Escolha inválida. Tente novamente.\n");                   
+}
+        } while (!acertou);
+        
+        //Desafio do pagamento dos trabalhadores (8)
+        do{
+            System.out.println("Após as construções que foram necessárias para manter a manutenção do reinado, como a muralha, o reparo do moinho e a exploração de minérios\n");
+                System.out.println("Os trabalhadores não ficaram satisfeitos com os valores do pagamento que foi dado a eles.\n");
+                System.out.println("O pagamento dos trabalhadores eram dados através de moedas, alimentos ou até animais.\n");
+                System.out.println("Como rei, você deve tomar essa decisão importante. Escolha uma das decisões: ");
+                System.out.println(">1< Reconhecer o serviço recorrente que os trabalhadores fazem para o império, porém, não dar nenhum tipo de pagamento a eles.");
+                System.out.println(">2< Ignorar o pedido dos trabalhadores e ameaçar aqueles que exigem os seus direitos.");
+                System.out.println(">3< Reconhecer o serviço feito pelos trabalhadores, ser justo e pagá-los, mas esse pequeno valor será retirado da fortuna dos ricos. ");
+                System.out.println(">4< Matar aqueles que estão exigindo um pagamento pelos serviços em segredo e contratar novas pessoas para trabalhar cegamente para o rei.");
     
+        opcao = jogador.nextInt();
+        switch (opcao) {
+            case 1: 
+                System.out.println("Decisão ruim... O reconhecimento não traz alimento e dinheiro a mesa das famílias! Você ficou manchado aos olhos do povo.\n");
+              break;
+
+            case 2:
+              System.out.println("Péssima decisão! O povo exige um líder e um governador justo para o seu povo, e não um tirano. Há um aumento de rebeldes e malfeitores contra o reino.\n");
+              break;
+              
+            case 3:
+                System.out.println("Excelente decisão... Reconhecer e ser justo com o seu povo afirma que você, mesmo com tropeços durante o caminho, ainda seja um bom líder.\n");
+                break;
+                
+            case 4:
+                System.out.println("Assassino!! As autoridades investigativas do reino estarão a frente desse cenário horrendo e criminoso.\n");
+                break;
+                
+            default:
+              System.out.println("Opção inválida, tente novamente.\n");
+              break;
+              
+        }
+    } while (opcao!=1 && opcao!=2 && opcao!=3 && opcao!=4);
+    
+        
+
         
         
         
