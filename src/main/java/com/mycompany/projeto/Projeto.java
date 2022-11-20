@@ -57,6 +57,8 @@ public class Projeto
     }
      }
     
+ //Início da história de The Realm of Unknown King    
+     
   public static void jogar(){
     Scanner jogador = new Scanner(System.in);
     
@@ -123,7 +125,9 @@ public class Projeto
        }
     } while (opcao != 1 && opcao!=2);
         
-    //Qual tipo de rei você deseja ser ao governar o império? (1)           
+    
+    //Qual tipo de rei você deseja ser ao governar o império? (1)
+    
         System.out.println(" O que está acontecendo? Quem são vocês que ousam invadir meu castelo em pleno leito de morte do meu marido?\n");
           
       
@@ -165,7 +169,9 @@ public class Projeto
        }
     } while (opcao1 != 1 && opcao1!=2  );
       
+      
       //Desafio do bobo da corte (2)
+      
       Random aleatorio = new Random ();
       
      
@@ -199,6 +205,7 @@ public class Projeto
         
       System.out.println("O numero era exatamente " +  a );
       
+      
         //Situação do Moinho (3)
         
         System.out.println("Depois da brincadeira com o rei, assuntos sérios precisavam ser tratados. Os agricultores do reino haviam chegado ao castelo e exclamado ao rei: o moinho quebrou!\n");
@@ -221,6 +228,7 @@ public class Projeto
  
         
         //Desafio da revolta da burguesia (4)
+        
         System.out.println("\nMeses após o evento do moinho, o conselheiro Fredericks sugeriu ao rei que criasse e desenvolvesse uma estrutura de hierarquia para o funcionamento adequado do império.\n");
         
         System.out.println("\nCom isso, dando oportunidade a plebe e causando também revoltas na burguesia com essa decisão...");
@@ -285,7 +293,8 @@ public class Projeto
         }
     } while (golpe_estado != 1 && golpe_estado !=2);
     
-    // questão coleta de minérios (6)
+    
+    // Questão coleta de minérios (6)
     
     System.out.println("O reinado se mantem de forma autosuficiente, sendo assim a busca por minérios é exigida pelo rei constantemente");
     System.out.println("Os minérios são uma importnate fonte de renda ao reinado, sendo um suporte econõmico e financeiro para o mesmo");
@@ -324,8 +333,7 @@ public class Projeto
                 System.out.println("Perdendo o trono para os conselheiros e para a rainha Roberta, retomando assim o trono");
                 System.out.println("Você perdeu o jogo");
                 System.exit(0); // Finalizando o codigo, o usuario perdeu.
-            
-            
+                       
               
                      break;
                      
@@ -357,6 +365,7 @@ public class Projeto
         
         else System.out.println("\nPerda significativa de soldados, porém voce dominou soldados de outros terras sendo assim manteve um número parecido de soldados.\n");
     
+        
     //Questão da muralha com ArrayList (7)
         boolean acertou = false;
         
@@ -425,6 +434,7 @@ public class Projeto
 }
         } while (!acertou);
         
+        
         //Desafio do pagamento dos trabalhadores (8)
         do{
             System.out.println("Após as construções que foram necessárias para manter a manutenção do reinado, como a muralha, o reparo do moinho e a exploração de minérios\n");
@@ -462,33 +472,45 @@ public class Projeto
     } while (opcao!=1 && opcao!=2 && opcao!=3 && opcao!=4);
     
         
+    System.out.println("Muitos meses após o evento com os trabalhadores do império, o rei vinha tomando atitudes que favoreciam apenas um dos lados de seu povo.\n");
+      System.out.println("Essas atitudes como aumentar impostos, jogo político e ameaças de guerras deixaram o povo insatisfeito...\n");
+      System.out.println("Atos que estavam levando a um possível fim do reinado de TOGS em Ironberg...\n");
+      System.out.println("Uma multidão enfurecida está a porta do seu castelo e eles tem um apelo a fazer!\n");
+    System.out.println("Querem que você renuncie, eles estão infelizes com o seu governo, exigem que você seja deposto. \n");
+    System.out.println("Digite >1< para acatar ao pedido do povo e renunciar ao trono");
+    System.out.println("Digite >2< para ser um pouco tirânico e permanecer no trono");
+    
+    //A escolha final (9)
+    do{
+
+        opcao = jogador.nextInt();
+        
+        switch (opcao) {
+            case 1: 
+              System.out.println("***BAD ENDING***\n");
+              System.out.println("Apesar do povo não gostar de você, você fazia boas escolhas para IRONBERG e fez com que ele prosperasse. Sem você para comandar tudo, eles ficaram perdidos e instáveis, levando a sua própria ruina.");
+                System.out.println("FIM.\n");
+              break;
+
+            case 2:
+              System.out.println("***GOOD ENDING***\n");
+                System.out.println("Você recusou o pedido de renuncia, sendo um tanto tirânico mas confiante da sua liderança. Insatisfeito ainda, o povo retorna para suas casas.");
+                  System.out.println("O tempo passa, e graças a sua escolha de ter permanecido no trono, IRONBERG segue mais próspera do que nunca!");
+                  System.out.println("FIM.\n");
+              break;
+
+            default:
+              System.out.println("Opção inválida, tente novamente... \n");
+              break;
+        }
+    } while (opcao != 1 && opcao!=2);
 
         
-        
-        
-        
-    
-    
-          
-          
-      
-      
-      
-      
-      
-      
-     
-
-      
-        
-        
-            
 
         System.exit(0); // Finaliza o código
 
         
         
-
   }
   
   public static void instruções(){
@@ -508,10 +530,6 @@ public class Projeto
   
   public static void créditos(){
   
-        
-      
-      
-      
       
       System.out.println("Diretores Executivos:\n João Macieski\n Thiago Perrud\n Pablo Molina\n");
         System.out.println("Roteiristas:\n João Macieski\n Thiago Perrud\n Pablo Molina\n ");
