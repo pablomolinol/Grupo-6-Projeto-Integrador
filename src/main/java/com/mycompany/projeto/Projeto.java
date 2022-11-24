@@ -1,10 +1,5 @@
 package com.mycompany.projeto;
 
-/**
- *
- * @author phmol
- */
-
 import java.util.ArrayList;
 
 import java.util.Collections;
@@ -46,7 +41,7 @@ public class Projeto
             case 4: System.out.println("Saindo...");System.exit(0);
         
             default:
-                System.out.println("Opção Inválida\n");
+                System.out.println("Opção Inválida. Tente novamente.\n");
                 
                 menu(); // retorna pro Menu
                 
@@ -65,15 +60,15 @@ public class Projeto
    
     System.out.println("Bem vindo à grandiosa história de TOGS I, onde um completo estranho, que de um mero camponês se transformou em um líder de um dos maiores impérios do mundo!\n ");
    
-    System.out.println("Primeiramente temos que começar a história falando do rei Carianus III, no qual comandava uma região gigantesca do seu mundo chamada de IRONBERG, e essa dinastia de Carianus III, ficou conhecida como a dinastia CARIANI.\n");
+    System.out.println("Primeiramente, temos que começar a história falando do rei Carianus III, no qual comandava uma região gigantesca do seu mundo chamada de IRONBERG, e essa dinastia de Carianus III, ficou conhecida como a dinastia CARIANI.\n");
    
-    System.out.println("No começo Carianus, tinha apenas uma pequena região de Ironberg, que havia herdado de seu pai, no qual era um homem pacífico, e não tinha perspectiva de grandeza, e isso irritava profundamente Carianus, então ele decidiu tomar providências quando herdou o trono.\n");
+    System.out.println("No começo, Carianus tinha apenas uma pequena região de Ironberg, que havia herdado de seu pai, no qual era um homem pacífico, e não tinha perspectiva de grandeza, e isso irritava profundamente Carianus, então ele decidiu tomar providências quando herdou o trono.\n");
    
-    System.out.println("Carianus- eu rei Carianus III, filho de Carianus II sempre tive um sonho, conquistar um território gigantesco para aumentar minhas terras e consequentemente nossas vidas, todos nós teríamos uma vida melhor.\n");
+    System.out.println("Carianus: eu, Carianus III, filho de Carianus II sempre tive um sonho: conquistar um território gigantesco para aumentar minhas terras e consequentemente nossas vidas, todos nós teríamos uma vida melhor!\n");
    
-    System.out.println("Então meus servos, lhe dou duas escolhas lutar para uma vida melhor ao lado do seu rei, ou aceitar a vida medíocre que vocês tem.\n");
+    System.out.println("Então, meus servos, lhe dou duas escolhas lutar para uma vida melhor ao lado do seu rei... Ou aceitar a vida medíocre que vocês possuem!\n");
    
-    System.out.println("Faça sua escolha sabiamente! Escolha >1< para invadir outros reinos com matança e extermínio de outras pessoas, ou, escolha >2< para invadir com menos matança e mais diálogo, para tentar conquistar os outros reinos\n");
+    System.out.println("Faça sua escolha sabiamente! Escolha >1< para invadir outros reinos com matança e extermínio de outras pessoas, ou escolha >2< para invadir com menos matança e mais diálogo, para tentar conquistar os outros reinos\n");
     int opcao; 
   
     do{
@@ -85,7 +80,7 @@ public class Projeto
               break;
 
             case 2:
-              System.out.println("Você tentou conquistar seu império com mais paz, mas afinal de contas na guerra, paz nunca é uma opção, você perde ainda mais soldados, pois não estavam tão preparados para guerra, quantos seus oponentes, mas isso não importa afinal de contas, pois seus soldados era muito mais fortes que os do oponente, conseguindo conquistar seu império para o seu caminho de glória!\n");
+              System.out.println("Você tentou conquistar seu império através da paz, mas afinal de contas na guerra, paz nunca é uma opção... Você perde ainda mais soldados, pois não estavam tão preparados para guerra. Isso não importa tanto, afinal de contas, seus soldados eram muito mais fortes que o seu oponente, conseguindo dar um passo a mais de seu império rumo ao caminho da glória!\n");
               break;
 
             default:
@@ -96,13 +91,13 @@ public class Projeto
     
         
         
-        System.out.println("Depois dessa 'Grande Conquista' como ficou conhecido esse acontecimento, Ironberg e Carianus III prosperaram, uma vida quase perfeita, se não fosse por um detalhe, Carianus e sua esposa, a rainha Roberta não conseguiam conceber um herdeiro para o trono, mesmo depois de uma vida inteira de conquistas e riqueza, o rei nunca conseguiu o que mais desejou, um filho. \n");
+        System.out.println("Depois dessa 'Grande Conquista', como ficou conhecido esse acontecimento, Ironberg e Carianus III prosperaram, uma vida quase perfeita, se não fosse por um detalhe... Carianus e sua esposa, a rainha Roberta não conseguiam conceber um herdeiro para o trono, mesmo depois de uma vida inteira de conquistas e riqueza, o rei nunca conseguiu o que mais desejou, um filho. \n");
         
-        System.out.println("30 anos se passam desde a Grande Conquista, Carianus está velho, fraco e desesperado, pois sabe que o fim de sua vida está próximo e quando sua inevitável morte acontecer, Ironberg ficará sem rei. \n");
+        System.out.println("30 anos se passam desde a Grande Conquista, Carianus está velho, fraco e desesperado, pois sabe que o fim de sua vida está próximo e quando sua inevitável morte acontecer, Ironberg ficará sem rei.\n");
         
-        System.out.println("O momento que temia finalmente chega, Carianus morre. Mas algo estranho acontece, em seu leito de morte a rainha Roberta ouve uma confusão, como se alguém tentasse invadir o castelo a força, mesmo de luto e sofrendo ela ainda é rainha e deve ir ver o que se passa. /n ");
+        System.out.println("O momento que todos temiam finalmente chega e Carianus morre... Mas algo estranho acontece, em seu leito de morte a rainha Roberta ouve uma confusão, como se alguém tentasse invadir o castelo a força, mesmo de luto e sofrendo ela ainda é a grandiosa rainha e deve ir ver o que se passa. /n ");
         
-        System.out.println("Escolha >1< para deixar quem está tentando invadir entrar ou escolha >2< para reforçar a guarda para impedir? \n");
+        System.out.println("Escolha >1< para deixar quem está tentando invadir entrar ou escolha >2< para reforçar a guarda para impedir!\n");
         
         
         
@@ -111,15 +106,15 @@ public class Projeto
         opcao = jogador.nextInt();
         switch (opcao) {
                  case 1: 
-                     System.out.println("Entra uma mulher que aparenta ter a idade de Roberta e um jovem aparentando ter 25 anos, forte, robusto e com um olhar familiar \n" );
+                     System.out.println("Entra uma mulher que aparenta ter a idade de Roberta e um jovem aparentando ter 25 anos, forte, robusto e com um olhar familiar...\n" );
                   break;
 
                   case 2:
-                     System.out.println("Você manda reforçar a guarda, mas inútil, derrubando a porta a força entra um jovem aparentando ter 25 anos, forte, robusto e com um olhar familiar e uma mulher que parece ter a idade de Roberta \n");
+                     System.out.println("Você manda reforçar a guarda, mas acabam derrubando a porta principal a força e entra um jovem aparentando ter 25 anos, forte, robusto e com um olhar familiar e uma mulher que parece ter a idade de Roberta \n");
                       break;
 
                   default:
-                     System.out.println("Opção inválida. ");
+                     System.out.println("Opção inválida.");
                      break;
        
        }
@@ -128,42 +123,41 @@ public class Projeto
     
     //Qual tipo de rei você deseja ser ao governar o império? (1)
     
-        System.out.println(" O que está acontecendo? Quem são vocês que ousam invadir meu castelo em pleno leito de morte do meu marido?\n");
+        System.out.println("O que está acontecendo? Quem são vocês que ousam invadir meu castelo em pleno leito de morte do meu marido? Desalmados!\n");
           
       
-        System.out.println("Me chamo Julis, e eu tenho um filho com o seu marido, vulgo Carianus III, ele sempre falava pra mim que era muito frustado por não tem um filho com a vossa majestade e eu dei esse orgulho pra ele, e eu vim com meu filho reivindicar o que é dele por direito.\n");
+        System.out.println("Me chamo Julis, e eu tenho um filho com o seu marido, vulgo Carianus III! Ele sempre falava pra mim que era muito frustado por não tem um filho com a vossa majestade e eu dei esse orgulho pra ele, e eu vim com meu filho reivindicar o que é dele por direito!\n");
           
-        System.out.println("Espantanda ao ver o filho de Julis, roberta pergunta o nome do menino e ele responde... me chamo Tiago Toguro, de onde eu venho sou conhecido como TOGS|Roberta estava muito espantandada com o que havia visto, pois não tinha como negar o que ela estava vendo.\n");
+        System.out.println("Espantanda ao ver o filho de Julis, Roberta pergunta o nome do menino e ele responde... me chamo Thiago Toguro, de onde eu venho sou conhecido como TOGS. Roberta estava muito espantandada com o que havia visto, pois não tinha como negar o que ela estava vendo.\n");
      
-          System.out.println("Thiago Toguro, vulgo TOGS era idêntico ao seu marido, certamente era filho dele, então a rainha Roberta pede conselho a corte do rei, que diz que tem que tem que entregar o trono, para TOGS.\n");
-      
-      System.out.println("Pois de acordo com as leis do trono, caso ela não passe o trono ela será tirada a força pois, o trono é de TOGS, por direito\n");
-     
-      System.out.println("Começando assim a dinastia do Tiago Toguro vulgo TOGS I\n");
-      
-      
-      System.out.println("Bem, TOGS é jovem e inexperiente, não sabe como regir um império, ainda mais do Tamanho de Ironberg, então escolheu dois conselheiros, Fredericks e Henry\n");
-      
-      System.out.println("Ensinando respectivamente administração ciêntifica e o outro a clássica\n ");
+          System.out.println("Thiago Toguro, vulgo TOGS, era idêntico ao seu marido, certamente era filho dele, então a rainha Roberta pede conselho a corte do rei, que diz para ela que, infelizmente, o reinado pertence ao filho bastardo.\n");
+          
+          System.out.println("Pois de acordo com as leis do trono, caso ela não passe o trono ela será tirada a força pois, o trono é de TOGS, por direito!\n");
+          
+          System.out.println("Começando assim a dinastia do Tiago Toguro, vulgo TOGS I!\n");
+          
+          System.out.println("Bem, TOGS é jovem e inexperiente, não sabe como regir um império, ainda mais do tamanho de Ironberg, então escolheu dois conselheiros, Fredericks e Henry\n");
+          
+          System.out.println("Ensinando, respectivamente, administração ciêntifica e clássica. Dois conceitos teóricos que grandes reinos e líderes importantes utilizavam naquela época para garantir um futuro próspero para os seus povos.\n ");
       
       
       System.out.println("Primeirmente os conselheiros do rei deram as opções para ele: escolher qual tipo de rei ele seria <escolha qual tipo de rei você quer ser\n ");
      
-      System.out.println("Escolha <1> para autoritário Escolha <2> para democrata\n");
+      System.out.println("Escolha <1> para Autoritário ou Escolha <2> para Democrata.\n");
       int opcao1;
       do{
         opcao1 = jogador.nextInt();
         switch (opcao) {
                  case 1: 
-                     System.out.println("Na escolha do rei autoritário, aonde as pessoas do seu reino não terão liberdade, se assemelhando com a ADM clássica\n" );
+                     System.out.println("Na escolha do rei autoritário, as pessoas do seu reino não terão liberdade, se assemelhando com a forma da Administração Clássica. Tome cuidado com as suas escolhas...\n" );
                   break;
 
                   case 2:
-                     System.out.println(" Na escolha do rei democrata, as pessoas seram dividas por tarefas e serão ouvidas\n");
+                     System.out.println("Na escolha do rei democrata, as pessoas serão divididas por tarefas e terão a sua própria voz. Você está tomando um bom caminho.\n");
                       break;
 
                   default:
-                     System.out.println("Opção inválida ");
+                     System.out.println("Opção inválida.");
                      break;
        
        }
@@ -177,34 +171,41 @@ public class Projeto
      
       int num,a,t=0;
       
-      System.out.println("No primeiro dia de governo, chega um bobo da corte e sugere uma brincadeira com orei se ele acertar quantas cartas de 0 a 52 eu tenho em minhas mãos\n Você em 5 chances, o próprio nunca mais o perturbaria com suas brincadeiras, caso ele erre ele voltará a pertuba-lo com suas bricadeiras");
+      System.out.println("No primeiro dia de governo, chega um bobo da corte e sugere uma brincadeira com o rei. Se ele acertar quantas cartas de 0 a 52 eu tenho em minhas mãos");
+      System.out.println("Você tem 5 chances, rei! E o próprio nunca mais o perturbaria com suas brincadeiras... MAS, caso ele erre, ele voltará a pertubá-lo com suas brincadeiras\n");
       
       a=aleatorio.nextInt(52);
       
       do {              
          
-          System.out.println(" escreva um numero de 0 a 52  "  );
+          System.out.println("Escreva um número de 0 a 52:  "  );
         
             num=jogador.nextInt();
        
-           if(num == a ){System.out.println("você ganhou o jogo! nunca mais o pertubarei ");}
+           if(num == a )
+           {System.out.println("DROGA! Você ganhou o jogo! Não irei te perturbar, vossa majestade...");}
         
-        if (num - a == 1 || num + 1 == a  ){System.out.println(" esta quente, tente mais  ");}
+        if (num - a == 1 || num + 1 == a  )
+        {System.out.println("Hum... Está quente, tente mais...");}
         
-        else if (num<a  ) {System.out.println(" o numero é maior  ");}
+        else if (num<a  ) 
+        {System.out.println("O número é maior");}
         
         
-        else if (num>a  ) {System.out.println(" o numero é menor ");}
+        else if (num>a  ) 
+        {System.out.println("O número é menor");}
        
         t++;
             
       } while((t!=5) && ( num !=a ));
       
-      if (num !=a){System.out.println("game over, voltarei a pertubalo com minhas brincadeiras!");}
+      if (num !=a){
+      System.out.println("GAME OVER! Voltarei a pertubá-lo com minhas brincadeiras em breve!");
         
         
-      System.out.println("O numero era exatamente " +  a );
+      System.out.println("O número era exatamente: " +  a );
       
+      }
       
         //Situação do Moinho (3)
         
@@ -231,7 +232,7 @@ public class Projeto
         
         System.out.println("\nMeses após o evento do moinho, o conselheiro Fredericks sugeriu ao rei que criasse e desenvolvesse uma estrutura de hierarquia para o funcionamento adequado do império.\n");
         
-        System.out.println("\nCom isso, dando oportunidade a plebe e causando também revoltas na burguesia com essa decisão...");
+        System.out.println("\nCom isso, acabou dando oportunidade a plebe, causando revoltas na burguesia com essa decisão...");
        
         System.out.println("\nCom o poder de persuasão da burguesia, eles recrutaram as pessoas da plebe como soldados, tentando dar um verdadeiro golpe no trono de TOGS I.");
         
@@ -270,25 +271,25 @@ public class Projeto
         switch (golpe_estado) {
             case 1: 
               System.out.println("Escolhendo o conselho de Henry, tentando prender a burguesia, quem o ajudou ele na guerra, você criou inimgios mortais dentro do reino, que juraram vingança");
-                     System.out.println("ao desagradar os conselheiros do reino e também todo o povo de seu império, fazendo com que todos os povos do seu reinado entrassem em guerra ");
-                     System.out.println("então você junta todos os seus soldados para tentar parar a rebelião, mas são quase todas as pessoas do seu reino contra você ");
-                     System.out.println("mesmo com força máxima, não foi suficiente para conter a raiva de todo seu povo");
-                     System.out.println("tendo assim percas desastrosas e impossíveis de seram retomadas, tomando assim um golpe de estado e perdendo seu reinado para a burguesia e seus conselheiros");
-                     System.out.println("perdendo assim o jogo.");
+                     System.out.println("Ao desagradar os conselheiros do reino e também todo o povo de seu império, fez com que todos os povos do seu reinado entrassem em guerra ");
+                     System.out.println("Você junta todos os seus soldados para tentar repelir a rebelião, mas quase todas as pessoas do seu reino estão contra você...");
+                     System.out.println("Mesmo com empenho e força máxima, não foi suficiente para conter a raiva e descontentamento de todos!");
+                     System.out.println("Tendo assim percas desastrosas e impossíveis de seram retomadas, gerando um golpe e perdendo seu reinado para a burguesia e seus conselheiros...");
+                     System.out.println("Fim de jogo.");
                      System.exit(0); // Finaliza o jogo pois voce perdeu, escolhendo a opção errada!
                      break;
                      
                      
                      
             case 2:
-              System.out.println("Escolhendo o conselho de Fredericks, você manteve a paz e a harmonia dentro do seu reinado ");
-              System.out.println("ao tomar esse sábia decisão, você deixou tranquilo a parcela do povo que estava aflita e com medo de suas decisões após tentar sofrer um golpe ");
-              System.out.println("Mas deixou o povo atento, pois ele sabem que você nao é bobo, e se tentar sofrer outra tentativa de golpe, irá haver árduas consequências ");
+              System.out.println("Escolhendo o conselho de Fredericks, você manteve a paz e a harmonia dentro do seu reinado.");
+              System.out.println("Ao tomar essa sábia decisão, você deixou tranquilo a parcela do povo que estava aflita com as suas decisões após tentar sofrer um golpe.");
+              System.out.println("Mas deixou o povo atento, pois ele sabem que você nao é inocente, e se tentar sofrer outra tentativa de golpe, irá haver árduas consequências...");
               
               break;
 
             default:
-              System.out.println("Opção inválida, tente novamente \n");
+              System.out.println("Opção inválida, tente novamente.\n");
               break;
         }
     } while (golpe_estado != 1 && golpe_estado !=2);
@@ -296,10 +297,10 @@ public class Projeto
     
     // Questão coleta de minérios (6)
     
-    System.out.println("O reinado se mantem de forma autosuficiente, sendo assim a busca por minérios é exigida pelo rei constantemente");
-    System.out.println("Os minérios são uma importnate fonte de renda ao reinado, sendo um suporte econõmico e financeiro para o mesmo");
-    System.out.println("Sendo de extrema importância manter sempre os seus servos mineiradores felizes");
-    System.out.println("Pois eles que mantem e fornecem grande riqueza para o crescimento do reinado ");
+    System.out.println("O reinado se mantem de forma autossuficiente, sendo assim, a busca por minérios é exigida pelo rei constantemente");
+    System.out.println("Os minérios são uma importante fonte de renda, fornecendo o suporte econõmico e financeiro para o reinado.");
+    System.out.println("E claro, é de extrema importância manter os seus mineradores felizes e leais, contribuindo sempre em nome do rei!");
+    System.out.println("Graças a eles, a grande riqueza se mantém para o crescimento do reinado...");
     
     int minerio  = aleatorio.nextInt(1000);
         System.out.println("\nO número de minérios coletados foi de " +  minerio);
@@ -313,7 +314,7 @@ public class Projeto
         
         
         else 
-            System.out.println("\nQuantidade acima do esperado, você da uma festa para celebrar um grande avanço economico");
+            System.out.println("\nQuantidade acima do esperado, você dá uma festa para celebrar um grande avanço econômico! Vida longa ao rei!");
         
         System.out.println("Após os resultados da mineração, você convoca uma reunião com seus súditos e conselheiros para visar o aumento do império em território ");
         System.out.println("Pois percebe que se aumentar o império, você terá maior influencia sobre seu povo, e outros povos mais distantes vão te respeitar e ter medo do seu império");
@@ -328,11 +329,11 @@ public class Projeto
         expansao = jogador.nextInt();
         switch (expansao) {
             case 1: 
-                System.out.println("Caso não queira expandir o império isso não vai agradar os conselheiros do trono, nem as pessoas de maior infleuncia do reino");
-                System.out.println("Causando assim uma guerra enorma contra você mesmo");
-                System.out.println("Perdendo o trono para os conselheiros e para a rainha Roberta, retomando assim o trono");
-                System.out.println("Você perdeu o jogo");
-                System.exit(0); // Finalizando o codigo, o usuario perdeu.
+                System.out.println("Não expandir o império irá desagradar os conselheiros do reino... A expansão aumenta o poder, a influência e a força de um povo.");
+                System.out.println("Essa escolha provoca uma guerra interna e infelizmente o pior acontece...");
+                System.out.println("Você acaba perdendo o trono para os conselheiros e para a sua amada rainha Roberta... Você os decepcionou sendo fraco demais para o poder.");
+                System.out.println("Você perdeu o jogo.");
+                System.exit(0); // Finalizando o codigo, o(a) jogador(a) perdeu.
                        
               
                      break;
@@ -361,9 +362,9 @@ public class Projeto
         
         
         else if (perdas > 300 && perdas < 600)
-            System.out.println("\n1Perca mediana de soldados, mas como você capturou soldados adversarios, você aumentou o número de soldados.\n");
+            System.out.println("\n1Perca mediana de soldados, mas como você capturou soldados adversarios, você aumentou o número de soldados do seu exército. Ótimo!.\n");
         
-        else System.out.println("\nPerda significativa de soldados, porém voce dominou soldados de outros terras sendo assim manteve um número parecido de soldados.\n");
+        else System.out.println("\nPerda significativa de soldados, porém voce dominou soldados de outros terras, sendo assim, mantendo um número próximo de soldados como anteriormente.\n");
     
         
     //Questão da muralha com ArrayList (7)
@@ -437,7 +438,7 @@ public class Projeto
         
         //Desafio do pagamento dos trabalhadores (8)
         do{
-            System.out.println("Após as construções que foram necessárias para manter a manutenção do reinado, como a muralha, o reparo do moinho e a exploração de minérios\n");
+            System.out.println("Após as construções que foram necessárias para garantir a manutenção do reinado, como a muralha, o reparo do moinho e a exploração de minérios\n");
                 System.out.println("Os trabalhadores não ficaram satisfeitos com os valores do pagamento que foi dado a eles.\n");
                 System.out.println("O pagamento dos trabalhadores eram dados através de moedas, alimentos ou até animais.\n");
                 System.out.println("Como rei, você deve tomar essa decisão importante. Escolha uma das decisões: ");
@@ -473,9 +474,9 @@ public class Projeto
     
         
     System.out.println("Muitos meses após o evento com os trabalhadores do império, o rei vinha tomando atitudes que favoreciam apenas um dos lados de seu povo.\n");
-      System.out.println("Essas atitudes como aumentar impostos, jogo político e ameaças de guerras deixaram o povo insatisfeito...\n");
-      System.out.println("Atos que estavam levando a um possível fim do reinado de TOGS em Ironberg...\n");
-      System.out.println("Uma multidão enfurecida está a porta do seu castelo e eles tem um apelo a fazer!\n");
+    System.out.println("Essas atitudes como aumentar impostos, jogo político e ameaças de guerras deixaram o povo insatisfeito...\n");
+    System.out.println("Atos que estavam levando a um possível fim do reinado de TOGS em Ironberg...\n");
+    System.out.println("Uma multidão enfurecida está a porta do seu castelo e eles tem um apelo a fazer!\n");
     System.out.println("Querem que você renuncie, eles estão infelizes com o seu governo, exigem que você seja deposto. \n");
     System.out.println("Digite >1< para acatar ao pedido do povo e renunciar ao trono");
     System.out.println("Digite >2< para ser um pouco tirânico e permanecer no trono");
@@ -488,7 +489,7 @@ public class Projeto
         switch (opcao) {
             case 1: 
               System.out.println("***BAD ENDING***\n");
-              System.out.println("Apesar do povo não gostar de você, você fazia boas escolhas para IRONBERG e fez com que ele prosperasse. Sem você para comandar tudo, eles ficaram perdidos e instáveis, levando a sua própria ruina.");
+              System.out.println("Apesar do povo não gostar de suas atitudes, você fazia boas escolhas para IRONBERG e fez com que ela prosperasse. Sem você para comandar tudo, eles ficaram perdidos e instáveis, levando a sua própria ruina.");
                 System.out.println("FIM.\n");
               break;
 
@@ -515,15 +516,16 @@ public class Projeto
   
   public static void instruções(){
   
-        System.out.println("Olá, seja bem vindo a The Realm of Unknown King.\n");
+        System.out.println("Olá, seja bem vindo a The Realm of Unknown King!\n");
         
-        System.out.println("The Realm of Unknown King é um jogo estilo RPG, onde você escolhe suas ações e elas influenciam diretamente em sua jornada.\n");
+        System.out.println("The Realm of Unknown King é um jogo estilo RPG, onde você escolhe suas ações e elas direcionam a sua jornada.\n");
         
         System.out.println("O jogo é feito por escolhas, onde em sua maioria você escolhe entre opções como A, B, C ou D, ou 1, 2, 3 ou 4.\n ");
   
-        System.out.println("Você progride na história conforme vai tomando decisôes que julgar correta, caso escolha fora das opções a questão vai resetar\n");
+        System.out.println("Você progride na história conforme as decisôes que você julgar correta, entretanto, caso escolha fora das opções mostradas, você terá que responder novamente... Ou não.\n");
 
-        System.out.println("Escolhas ruins podem resultar em um Fim de jogo mais rapido, escolhas sábias podem garantir em um jogo mais longo\n");
+        System.out.println("Escolhas ruins podem resultar em um fim de jogo mais rapido, escolhas sábias podem garantir em um jogo mais longo.\n");
+        
         
         menu();
   } 
@@ -536,11 +538,13 @@ public class Projeto
         System.out.println("Dirigido e editado por:\n João Macieski\n Thiago Perrud\n Pablo Molina\n");
         System.out.println("Produção:\n João Macieski\n Thiago Perrud\n Pablo Molina\n");
 
-        System.out.println("Agradecimento especial a Tiago Toguro da mansão maromba!");
+        System.out.println("Agradecimento especial a Thiago Toguro.");
+        System.out.println("Muito obrigado por jogar o nosso jogo! :^]\n");
 
         
         menu();
        } 
+  
         public static void main (String[] args){
         menu();
         // volta pro Menu
